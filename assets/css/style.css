@@ -4,9 +4,15 @@
   Grid
   ========================================
 */
-
+html {
+  height: 100%;
+}
 body{
-    margin: 0;
+  margin: 0;
+  height: 100%;
+  background-image: url("../images/backgroundPattern01.png");
+  background-repeat: repeat;
+  width: 100%;
 }
 *,
 *:before,
@@ -16,27 +22,37 @@ body{
           box-sizing: border-box;
 }
 
+h1 {
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+p {
+  color: #777777;
+}
 .top-container {
     margin: 0;
-    width: 100%;
     padding-left: 180px;
     padding-right: 0px;
     align-content: center;
-    
+    background-color: #fff;
+    min-width: 1150px;
 }
 
-.your-name {
-        margin: 0;
-        padding: 20px 20px;
-        color: rgb(250,250,250);
-        background-color: rgb(24, 138, 138);
-        font-size: 1.5em;
-        float: left;
+
+.logo {
+      margin: 0;
+      padding: 20px 20px;
+      color: #fff;
+      background-color: #4aaaa5;
+      font-family: 'Georgia', Times, Times New Roman, serif;
+      font-size: 1.5em;
+      float: left;
 }
 
 .navigation {
-  padding: 25px 0px 25px 600px;
-    text-align: left;
+  padding: 25px 0px 25px 535px;
+  text-align: left;
+  float: left;
     
 }
 
@@ -53,8 +69,56 @@ nav a:last-child{
   border-right: none;
 }
 
+.top-container-tail {
+  height: 68px;
+  background-color: #ffffff;
+}
+
 hr {
   clear: left;
   margin: 0;
+  color: #cccccc
+}
 
+.photo {
+  float: left;
+  margin: 0 25px 25px 0;
+} 
+
+.bio-text {
+  float: left;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: #ffffff;
+  width: 960px;
+  margin: 30px 0 0 180px;
+  border: 1px solid #dddddd; 
+}
+
+img{
+  height: 150px;
+}
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+.footer,
+.push {
+  height: 50px;
+}
+
+footer {
+  text-align: center;
+  padding-top:25px;
+  font-size: 0.65em;
+  width: 100%;
+  border-top: 4px solid #4aaaa5;
+  color: #ffffff;
+  background-color: #666666;
 }
