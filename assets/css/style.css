@@ -1,7 +1,7 @@
 /* Personal Bio Style sheet */
 /*
   ========================================
-  Grid
+  
   ========================================
 */
 html {
@@ -26,27 +26,30 @@ h1 {
   color: #4aaaa5;
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
+
 p {
   color: #777777;
-}
-.top-container {
-    margin: 0;
-    padding-left: 180px;
-    padding-right: 0px;
-    align-content: center;
-    background-color: #fff;
-    min-width: 1150px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+.top-container {
+  margin: 0;
+  padding-left: 180px;
+  padding-right: 0px;
+  align-content: center;
+  background-color: #fff;
+  min-width: 1150px; 
+  border-bottom: 1px solid #cccccc;
+}
 
 .logo {
-      margin: 0;
-      padding: 20px 20px;
-      color: #fff;
-      background-color: #4aaaa5;
-      font-family: 'Georgia', Times, Times New Roman, serif;
-      font-size: 1.5em;
-      float: left;
+  margin: 0;
+  padding: 20px 20px;
+  color: #fff;
+  background-color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 1.5em;
+  float: left;
 }
 
 .navigation {
@@ -70,36 +73,35 @@ nav a:last-child{
 }
 
 .top-container-tail {
-  height: 68px;
+  height: 67px;
   background-color: #ffffff;
 }
 
-hr {
+.clear-float{
   clear: left;
+  visibility: hidden;
+}
+
+hr {
   margin: 0;
-  color: #cccccc
+  color: #cccccc;
+ 
 }
 
 .photo {
   float: left;
   margin: 0 25px 25px 0;
+  height:150px;
 } 
 
 .bio-text {
   float: left;
 }
 
-.main-content {
-  padding: 20px;
-  background-color: #ffffff;
-  width: 960px;
-  margin: 30px 0 0 180px;
-  border: 1px solid #dddddd; 
+.bio-clearfloat{
+  clear: left;
 }
 
-img{
-  height: 150px;
-}
 .wrapper {
   min-height: 100%;
   width: 100%;
@@ -108,6 +110,26 @@ img{
   /* But also accounting for potential margin-bottom of last child */
   margin-bottom: -50px;
 }
+
+.main-content {
+  padding: 0 20px 0 20px;
+  background-color: #ffffff;
+  width: 960px;
+  margin: 30px 0 50px 180px;
+  border: 1px solid #dddddd; 
+  /* min-height: 900px; */
+}
+
+.portfolio-grid {
+  height: auto;
+}
+
+.portfolio-image {
+  height: 170px;
+  width: 240px;
+  position: relative;
+}
+
 .footer,
 .push {
   height: 50px;
@@ -121,4 +143,5 @@ footer {
   border-top: 4px solid #4aaaa5;
   color: #ffffff;
   background-color: #666666;
+  min-width: 1150px; 
 }
