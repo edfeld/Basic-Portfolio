@@ -130,6 +130,15 @@ hr {
   position: relative;
 }
 
+
+.pic-overlay {
+  position: absolute;
+  text-align: center;
+  bottom: 30px;
+  background-color:#4aaaa5; 
+
+}
+
 .footer,
 .push {
   height: 50px;
